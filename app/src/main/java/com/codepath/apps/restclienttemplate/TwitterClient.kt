@@ -52,7 +52,7 @@ class TwitterClient(context: Context) : OAuthBaseClient(
     }
 
 
-    fun populateHomeTimeline(handler: JsonHttpResponseHandler) {
+    fun getHomeTimeline(handler: JsonHttpResponseHandler) {
         val apiUrl =
             getApiUrl("statuses/home_timeline.json")
 
